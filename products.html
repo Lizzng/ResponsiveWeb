@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css", type="text/css">
+        <script src="JavaScript.js"></script>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <title>Glitterati Nails</title>
+        <meta name = "viewport" http-equiv="Content-Type" content="width= device-width, initial-scale = 1.0, maximuum-scale=1.0">
+    <link rel = "shorctcut icon"  href = "images/favicon.ico">
+    </head>
+    <body>
+
+     <div id = "wrapper">
+        <header> 
+            <div class = "flex">
+            <div class = "logo">
+                <a href =  "index.html"><img src = "images/logo.png" width="80" height="80" alt = "Logo Image" ></a>
+            </div>
+            <nav>
+                <button id = "nav-toggle" class="hamburger-menu">
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                </button>
+                <ul id= "nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+         <script>
+            document.getElementById('nav-toggle').addEventListener('click', function(){
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            })
+    </script>
+        </header>     
+        <main>
+            <section class="product-list">
+            <h1>Our Products</h1>    
+    
+        
+        <button class="mybtn fas fa-list" onclick="Button(0); List();"><span> list</span></button>
+        <button class="mybtn Active fas fa-th-large" onclick="Button(1); Grid();"><span> grid</span></button>
+    
+        
+        <ul id="item">
+        
+            <li class="myItem">
+                <h3>Product 1</h3>
+                <br>
+                <img src = "images/product1.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 2</h3>
+                <br>
+                <img src = "images/product2.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 3</h3>
+                <br>
+                <img src = "images/product3.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 4</h3>
+                <br>
+                <img src = "images/product4.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 5</h3>
+                <br>
+                <img src = "images/product5.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <br>
+                <h3>Product</h3>
+                <img src = "images/product6.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 7</h3>
+                <br>
+                <img src = "images/product7.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 8</h3>
+                <br>
+                <img src = "images/product8.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 9</h3>
+                <br>
+                <img src = "images/product9.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 10</h3>
+                <br>
+                <img src = "images/product10.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 11</h3>
+                <br>
+                <img src = "images/product11.png" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+            <li class="myItem">
+                <h3>Product 12</h3>
+                <br>
+                <img src = "images/product12.jpg" width="280" height="300" alt = "Logo Image" ></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <input type="button"  value="Select Quantity" onclick="purchaseValidator();">
+                <p id="myOutputTag"></p>
+            </li>
+        </ul>
+            </section>
+        </main>
+  
+       
+
+
+        <footer>
+            <div class ="flex">
+                <small>&copy; 2020 Glitterati Nails. XXXXX</small>
+            </div>
+        </footer>
+    </body>
+</html>

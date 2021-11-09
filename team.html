@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css", type="text/css">
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <script src="JavaScript.js"></script>
+        <script src="teamArray.js"></script>
+        <script src="arrayHandler.js"></script>
+        <title>Glitterati Nails</title>
+        <meta name = "viewport" http-equiv="Content-Type" content="width= device-width, initial-scale = 1.0, maximuum-scale=1.0">
+        <link rel = "shorctcut icon"  href = "images/favicon.ico">
+    </head>
+    <body onload="populateDropdown();">
+
+     <div id = "wrapper">
+        <header> 
+            <div class = "flex">
+            <div class = "logo">
+                <a href =  "index.html"><img src = "images/logo.png" width="80" height="80" alt = "Logo Image" ></a>
+            </div>
+            <nav>
+                <button id = "nav-toggle" class="hamburger-menu">
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                </button>
+                <ul id= "nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+         <script>
+            document.getElementById('nav-toggle').addEventListener('click', function(){
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            })
+    </script>
+        </header>     
+    
+  <main>
+    <section class="team">
+        <div class="container">
+              <h1>Our Team</h1>
+              <div class="card">
+                    <div class="box">
+                          <img src="images/one.jpg" alt="team img" />
+                          <h4>Linda O'Connell</h4>
+                          <h5>Manager</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </div>
+              </div>
+              <div class="card">
+                    <div class="box">
+                          <img src="images/two.jpg" alt="team img" />
+                          <h4>Hanna Gardiner</h4>
+                          <h5>Beauty Specialist </h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </div>
+              </div>
+              <div class="card">
+                    <div class="box">
+                          <img src="images/three.jpg" alt="team img" />
+                          <h4>Amber White</h4>
+                          <h5>Beauty Specialist </h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </div>
+              </div>
+              <div class="card">
+                    <div class="box">
+                          <img src="images/four.jpg" alt="team img" />
+                          <h4>Jessica Fox</h4>
+                          <h5>Beauty Specialist </h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </div>
+              </div>
+        </div>
+   </section>
+
+<section  class="teamMembers">
+    <p>Check team member info: 
+    <select id="teamMemberList" onchange="getMemberData();"></select>
+    </p>
+    <div id="members"></div> 
+</section>
+
+  </main>
+
+        <footer>
+            <div class ="flex">
+                <small>&copy; 2020 Glitterati Nails. XXXXX</small>
+            </div>
+        </footer>
+    </body>
+</html>

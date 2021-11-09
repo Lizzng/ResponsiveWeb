@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css", type="text/css">
+        <script src="JavaScript.js"></script>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <title>Glitterati Nails</title>
+        <meta name = "viewport" http-equiv="Content-Type" content="width= device-width, initial-scale = 1.0, maximuum-scale=1.0">
+    <link rel = "shorctcut icon"  href = "images/favicon.ico">
+    </head>
+    <body>
+
+     <div id = "wrapper">
+        <header> 
+            <div class = "flex">
+            <div class = "logo">
+                <a href =  "index.html"><img src = "images/logo.png" width="80" height="80" alt = "Logo Image" ></a>
+            </div>
+            <nav>
+                <button id = "nav-toggle" class="hamburger-menu">
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                </button>
+                <ul id= "nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+         <script>
+            document.getElementById('nav-toggle').addEventListener('click', function(){
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            })
+    </script>
+        </header>     
+    
+  
+        <main>
+            <section class="contact-us">
+                <h1>Contact us</h1>
+                <div class = "flex">
+                <div id="map">
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCylFrojEtjp09R-4XmKXXhOk1mffmRbMM&callback=initMap&libraries=&v=weekly"
+                defer
+                ></script>
+                </div>
+<div class="contact-form">
+    <address>
+            <p id="businessNameTag"></p>
+            <p id="locationTag"></p>
+            <p id="cityTag"></p>
+            <p id="emailTag"></p>
+            <p id="phoneNumberTag"></p>
+            <script>
+                //new object
+                var businessObject = {
+                    //now add some properties to the object
+                    businessName : "Gliterrati Nails",
+                    location : "Capel Street, Dublin 1",
+                    city : "Dublin",
+                    email : "info@glitteratinails.com",
+                    phoneNumber : "012345678"
+                };
+                //now query each key and output the value to the DOM
+                //use two vars (ignore scope for now) for the DOM element
+                //and also the concatenated output string
+                var myCurrentTag = document.getElementById("businessNameTag");
+                var myOutputString = "Business Name: ";
+                myOutputString = myOutputString.concat(businessObject["businessName"]);
+                myCurrentTag.innerHTML = myOutputString;
+                //now location
+                myCurrentTag = document.getElementById("locationTag");
+                myOutputString = "Location: ";
+                myOutputString = myOutputString.concat(businessObject["location"]);
+                myCurrentTag.innerHTML = myOutputString;
+                //now city
+                myCurrentTag = document.getElementById("cityTag");
+                myOutputString = "City: ";
+                myOutputString = myOutputString.concat(businessObject["city"]);
+                myCurrentTag.innerHTML = myOutputString;
+                //now email
+                myCurrentTag = document.getElementById("emailTag");
+                myOutputString = "Email: ";
+                myOutputString = myOutputString.concat(businessObject["email"]);
+                myCurrentTag.innerHTML = myOutputString;
+                //now phoneNumber
+                myCurrentTag = document.getElementById("phoneNumberTag");
+                myOutputString = "Telephone: ";
+                myOutputString = myOutputString.concat(businessObject["phoneNumber"]);
+                myCurrentTag.innerHTML = myOutputString;
+            </script>
+    </address>
+
+        <form name="form" onsubmit="return validateform()">
+            <input type="text"  name="name" id="name" placeholder="Name" pattern="^[a-zA-Z ]+$"/>
+            <input type="email"  name="email" id="email" placeholder="Email" />
+            <input type="text"  name="subject" id="subject" placeholder="Subject" />
+            <textarea id= "message" placeholder="Type your message here..." ></textarea>
+            <button  id= "button">Submit</button>
+        </form>
+    </div>
+</div>
+</section>
+        </main>
+
+
+        <footer>
+            <div class ="flex">
+                <small>&copy; 2020 Glitterati Nails. XXXXX</small>
+            </div>
+        </footer>
+    </body>
+</html>

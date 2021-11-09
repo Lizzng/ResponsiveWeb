@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css", type="text/css">
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <script src="JavaScript.js"></script>
+        <title>Glitterati Nails</title>
+        <meta name = "viewport" http-equiv="Content-Type" content="width= device-width, initial-scale = 1.0, maximuum-scale=1.0">
+        <link rel = "shorctcut icon"  href = "images/favicon.ico">
+    </head>
+    <body>
+
+     <div id = "wrapper">
+        <header> 
+            <div class = "flex">
+            <div class = "logo">
+                <a href =  "index.html"><img src = "images/logo.png" width="80" height="80" alt = "Logo Image" ></a>
+            </div>
+            <nav>
+                <button id = "nav-toggle" class="hamburger-menu">
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                    <span class = "strip"></span>
+                </button>
+                <ul id= "nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+         <script>
+            document.getElementById('nav-toggle').addEventListener('click', function(){
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            })
+    </script>
+        </header>     
+    
+        <main>
+            <section class="hero-image">
+                <img src = "images/Nail-Salon.png" alt = "Banner Image" />
+                <div class = "hero-marketing-bar">
+                    <h3>Lorem ipsum dolor sit amete</h3>
+                    <h1>Give Life A Sparkle</h1>
+                </div>
+            </section>
+
+            <section class="marketing-boxes">
+                <div class ="flex">
+                    <div class="box">
+                        <h2>Contact</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <a href="contact.html">
+                            <button>More Info</button>
+                        </a>
+                    </div>
+                    
+                    <div class="box box2">
+                        <h2>Products</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <a href="products.html">
+                            <button>More Info</button>
+                        </a>
+                    </div>
+
+                    <div class="box">
+                        <h2>Team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <a href="team.html">
+                            <button>More Info</button>
+                        </a>
+                </div>
+            </section>
+
+            <section class="mission-statement">
+                <h1>Mission Statement</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            </section>  
+        </main>
+
+        <footer>
+            <div class ="flex">
+                <small>&copy; 2020 Glitterati Nails. XXXXX</small>
+            </div>
+        </footer>
+    </body>
+</html>
